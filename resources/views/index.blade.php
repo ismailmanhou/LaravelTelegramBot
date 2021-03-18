@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsmailArtWorks</title>
+
+    <link rel="stylesheet" href="{{ asset("css/font-awesome.min.css") }} ">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset("css/normalize.css") }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start navBullets -->
+
+    <!-- Start navBullets -->
+
+    <div class="nav-bullets">
+        <div class="bullet active" data-section=".about-us">
+            <div class="tooltip"  >About Us</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip" >Our Skills</div>
+        </div>
+        <div class="bullet" data-section=".portfolio">
+            <div class="tooltip" >Portfolio</div>
+        </div>
+        <div class="bullet" data-section=".t-shirt">
+            <div class="tooltip" >T-Shirt</div>
+        </div>
+        <div class="bullet" data-section=".time">
+            <div class="tooltip" >Timeline</div>
+        </div>
+        <div class="bullet" data-section=".contact-us">
+            <div class="tooltip" >Contact Us</div>
+        </div>
+    </div>
+    <!-- End navBullets -->
+    <!-- Start Header -->
+    <div class="landing-page">
+        <div class="overlay">
+            <div class="container">
+            <div class="header-area">
+
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+
+                    </div>
+                <div class="links-containe">
+                <ul class="links">
+                    <li><a href="#" data-scroll="home">Home</a> </li>
+                    <li><a href="#" data-scroll="about-us">About Us</a></li>
+                    <li><a href="#" data-scroll="skills">Our Skills</a></li>
+                    <li><a href="#" data-scroll="portfolio">Portfolio</a></li>
+                    <li><a href="#" data-scroll="t-shirt">T-Shirt</a></li>
+                    <li><a href="#" data-scroll="time">Timeline</a></li>
+                    <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+                </ul>
+                <button class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="introduction-text">
+            <h2>HAY! THERE, I AM <span>ISMAIL MANHOU</span></h2>
+            <p>A Freelance Motion Graphic </p>
+            <button>Download My CV </button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End Header -->
+    <!-- Start About-Us -->
+    <div id="about-us" class="head-with-border about-us">
+        <h2>About Us</h2>
+    </div>
+    <div class="container">
+
+        <div class="about-us">
+            <div class="image-box">
+                <img src="imgs/ismail.jpg" alt="">
+            </div>
+            <div class="info-box">
+                <h1>About Us</h1>
+                <p>Specialist in video creation, animation videos and video editing for all social platforms. +5 years
+                    of experience a video Editor,Motion Graphic Designer and Animation 2D Expert in Toon Boom
+                    Animation,Adobe Animate,Adobe After Effects,Premiere Pro,Illustra</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End About-Us -->
+    <!-- Start Our-Skills -->
+    <div id="skills" class="head-with-border skills">
+        <h2>Our Skills</h2>
+    </div>
+    <div class="skills">
+
+        <div class="container">
+            <div class="skill-box">
+                <div class="skill-name">PhotoShop</div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">AfterEffect</div>
+                <div class="skill-progress">
+                    <span data-progress="95%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Illustrator</div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                    <span data-progress="50%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">PHP</div>
+                <div class="skill-progress">
+                    <span data-progress="50%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our-Skills -->
+    <!-- Start Gallery -->
+
+
+    <!-- End Gallery -->
+        <!-- Start Dynamick Tabs -->
+        <div id="portfolio" class="head-with-border portfolio">
+            <h2>Portfolio</h2>
+        </div>
+<div class="container">
+    <button class="switch-tabs">Switch</button>
+    <div class="dynamic-tabs">
+        <ul class="tabs-list ">
+            <li class="active" data-content=".content-one">Our Mangay</li>
+            <li data-content=".content-tow">Our Drawings </li>
+            <li data-content=".content-three"> Our Videos</li>
+            <li data-content=".content-four">Our Motion Graphic</li>
+        </ul>
+        <div class="content-list">
+            <div class="content-one">
+                <div id="gallery" class="gallery ">
+
+
+            <div class="images-box">
+                <img class="image" src="imgs/story/cov.jpg" alt="EL MKAFA7">
+
+            </div>
+            <div class="images-box">
+                <img class="image" src="imgs/story/1.jpg" alt="EL MKAFA7">
+
+            </div>
+            <div class="images-box">
+                <img class="image" src="imgs/story/2.jpg" alt="EL MKAFA7">
+            </div>
+            <div class="images-box">
+                <img class="image" src="imgs/story/3.jpg" alt="EL MKAFA7">
+            </div>
+            <div class="images-box">
+                <img class="image" src="imgs/story/4.jpg" alt="EL MKAFA7">
+            </div>
+            <div class="images-box">
+                <img class="image" src="imgs/story/5.jpg" alt="EL MKAFA7">
+            </div>
+            <div class="images-box ">
+                <img class="image" src="imgs/story/6.jpg" alt="EL MKAFA7">
+            </div>
+            <div class="clearfix"></div>
+            <!-- <div class="toggle_btn">
+                <div class="toggle_btn from-left upper text-centre ">
+                    <span class="toggle_text">show more </i></span>
+                </div>
+            </div> -->
+
+        </div>
+            </div>
+            <div class="content-tow">
+                <div id="gallery" class="gallery ">
+
+
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/1.png" >
+
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/2.png" >
+
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/3.png" >
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/4.png" >
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/5.png" >
+                    </div>
+                    <div class="images-box">
+                        <img class="image" src="imgs/draw/6.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/7.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/8.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/9.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/10.png" >
+                    </div>
+                    <div class="images-box ">
+                        <img class="image" src="imgs/draw/11.png" >
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- <div class="toggle_btn">
+                        <div class="toggle_btn from-left upper text-centre ">
+                            <span class="toggle_text">show more </i></span>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="content-three">
+                <div class="our-project">
+                    <div class="container">
+                        <div class="video-box">
+                            <iframe  src="https://www.youtube.com/embed/o-8NrsCS36w?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-box">
+                            <iframe src="https://www.youtube.com/embed/sZ9bhrMRsAA?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    <div class="video-box">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FISMAILARTWORKS%2Fvideos%2F301064597865078%2F&show_text=false&width=560"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="video-box">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=339&href=https%3A%2F%2Fwww.facebook.com%2FISMAILARTWORKS%2Fvideos%2F314873876198413%2F&show_text=false&width=560"   scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <div class="video-box">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FISMAILARTWORKS%2Fvideos%2F1368760819939319%2F&show_text=false&width=560" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="content-four">
+                <div class="our-project">
+                    <div class="container">
+                    <div class="video-box">
+                        <iframe  src="https://www.youtube.com/embed/4Q3ich2u9zA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-box">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FISMAILARTWORKS%2Fvideos%2F505080533780927%2F&show_text=false&width=560"   scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End Dynamick Tabs -->
+    <!-- Start product -->
+
+    <div id="t-shirt" class="t-shirt head-with-border">
+        <h2>T-Shirt</h2>
+    </div>
+    <div  class="products">
+        <div class="container">
+            <div class="product" >
+                <div class="heart">
+                    <i class="fa fa-heart-o " aria-hidden="true"></i>
+                </div>
+                <div class="img-box">
+                    <img id="img1" src="imgs/t-shirt/1-1.jpg" alt="">
+                </div>
+
+                <div class="text-box">
+                    <div class="brand">
+                        <div>T.Shirt</div>
+                        <div class="price"> 100 MAD </div>
+                        <div class="promo text-centre">
+                            <div>-15% EXTRA</div>
+                            <div>40%</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div>T-Shirt Art Works - d'été </div>
+                        <div class="nprice"> 80 MAD </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" >
+                <div class="heart">
+                    <i class="fa fa-heart-o " aria-hidden="true"></i>
+                </div>
+                <div class="img-box">
+                    <img id="img1" src="imgs/t-shirt/1-2.jpg" alt="">
+                </div>
+
+                <div class="text-box">
+                    <div class="brand">
+                        <div>T.Shirt</div>
+                        <div class="price"> 100 MAD </div>
+                        <div class="promo text-centre">
+                            <div>-15% EXTRA</div>
+                            <div>40%</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div>T-Shirt Art Works - d'été </div>
+                        <div class="nprice"> 80 MAD </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" >
+                <div class="heart">
+                    <i class="fa fa-heart-o " aria-hidden="true"></i>
+                </div>
+                <div class="img-box">
+                    <img id="img1" src="imgs/t-shirt/1-1.jpg" alt="">
+                </div>
+
+                <div class="text-box">
+                    <div class="brand">
+                        <div>T.Shirt</div>
+                        <div class="price"> 100 MAD </div>
+                        <div class="promo text-centre">
+                            <div>-15% EXTRA</div>
+                            <div>40%</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div>T-Shirt Art Works - d'été </div>
+                        <div class="nprice"> 80 MAD </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product" >
+                <div class="heart">
+                    <i class="fa fa-heart-o " aria-hidden="true"></i>
+                </div>
+                <div class="img-box">
+                    <img id="img1" src="imgs/t-shirt/1-2.jpg" alt="">
+                </div>
+
+                <div class="text-box">
+                    <div class="brand">
+                        <div>T.Shirt</div>
+                        <div class="price"> 100 MAD </div>
+                        <div class="promo text-centre">
+                            <div>-15% EXTRA</div>
+                            <div>40%</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <div>T-Shirt Art Works - d'été </div>
+                        <div class="nprice"> 80 MAD </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- End product -->
+    <!-- Start Timeline -->
+    <div id="time" class="head-with-border time">
+        <h2>Timeline</h2>
+    </div>
+    <div class=" timeline ">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2020</div>
+                <div class="clearfix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Making StoryBoard ISLI & TISLIT</h3>
+                        <p>It is a storyboard about the <b>ISLI AND TISLIT </b> legend, which talks about the suffering of a young woman and  man who wants to get married and prevented them from conflict between two tribes in the <b>IMILCHIL</b>  region. </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Making Manga EL-MKFE7</h3>
+                        <p>It is a serie of graphic jokes inspired by the Moroccan heritage </p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            <div class="left">
+                    <div class="content">
+                        <h3>  Awareness film About COVID 19</h3>
+                        <p>production of an awareness film on the role of the health sector and national security in the fight against the spread of COVID 19  </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">2018</div>
+
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Making Video For ADMR Association</h3>
+                        <p>video produced on 15 villages in Morocco, evaluation of the construction of slopes for isolated villages </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Timeline -->
+    <!-- Start Footer -->
+    <div class="footer  ">
+        <div class="container">
+            <div class="gallery">
+                <h3 class="section-title ">Latest Gallery</h3>
+                <div class="img-box">
+                    <img src="imgs/story/2.jpg" alt="">
+                    <div class="text">
+                        <h4>Manga EL MKFE7</h4>
+                        <p>It is a serie of graphic jokes inspired by the Moroccan heritage</p>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="imgs/STORYBOARD.jpg" alt="">
+                    <div class="text">
+                        <h4>Making StoryBoard ISLI & TISLIT</h4>
+                        <p>It is a storyboard about the <b>ISLI AND TISLIT </b> legend, which talks about the suffering of a young woman and  man who wants to get married and prevented them from conflict between two tribes in the <b>IMILCHIL</b>  region. </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="info contact-us">
+                <h3 class="section-title ">Company Details</h3>
+                <ul>
+                    <li>IsmailArtWorks</li>
+                    <li>Er-Rich 106 db moulay ali cherif</li>
+                    <li>Er-Rich</li>
+                    <li>52400</li>
+                    <li>Tel :+212690851565</li>
+                    <li>Email : <span>ismailartwork@gmail.com</span> </li>
+                </ul>
+            </div>
+            <div id="contact-us" class="contact">
+                <h3 class="section-title ">Contact Us</h3>
+                <form action="{{ url('/send-message') }}" method="post">
+                    {{ csrf_field() }}
+                    <input type="text" id="name" name="name"  placeholder="Name">
+                    <textarea name="message" id="message"  placeholder="Enter your query" ></textarea>
+                    <input class="main-button" type="submit"  value="Submit">
+                </form>
+
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="text">All Right Reserved &copy; 2021</div>
+                    <div class="author">Desined By : Ismail Manhou</div>
+                </div>
+
+            </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

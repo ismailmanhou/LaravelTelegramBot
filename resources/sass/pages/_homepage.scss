@@ -1,0 +1,25 @@
+.product{
+    background-color: #EEE;
+    width: 500px;
+    height: 250px;
+    position: relative;
+    @include prefixer(animation, fadeInOut 2s infinite linear, webkit moz);
+    @include prefixer(box-shadow,10px 10px 10px #CCC, webkit moz o ms ) ;
+    .overlay {
+        @include overlay;
+        background-color: rgb($mainColor, .4);
+        color: #FFF;
+        opacity: 0;
+    }
+}
+@include KeyFrames(fadeInOut){
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
